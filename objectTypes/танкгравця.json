@@ -1,0 +1,88 @@
+{
+	"name": "ТанкГравця",
+	"plugin-id": "Sprite",
+	"sid": 588793958298913,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "EightDir",
+			"name": "8Direction",
+			"sid": 759390845736989
+		},
+		{
+			"behaviorId": "bound",
+			"name": "ОбмежитиРівнем",
+			"sid": 786521364993394
+		},
+		{
+			"behaviorId": "scrollto",
+			"name": "ПроскролитиДо",
+			"sid": 373102731373749
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1840647,
+						"collisionPoly": {
+							"points": [
+								0.22399993896484374,
+								0.19599998474121091,
+								0.5,
+								0.196,
+								0.7000001220703125,
+								0.19999981689453128,
+								0.7599997558593748,
+								0.45199996948242177,
+								0.9129996948242187,
+								0.45399974822998024,
+								0.903499755859375,
+								0.5409999275207518,
+								0.7539998168945312,
+								0.5359999847412108,
+								0.7239999389648437,
+								0.8280000305175782,
+								0.5,
+								0.844,
+								0.22799993896484383,
+								0.8400000305175782,
+								0.18399987792968758,
+								0.783999938964844,
+								0.1820000915527344,
+								0.27999996185302733
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Точка малюнку. 1",
+								"x": 0.976,
+								"y": 0.504
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 698994202515232,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,88 @@
+{
+	"name": "Бот",
+	"plugin-id": "Sprite",
+	"sid": 741913415603616,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Напрямок",
+			"type": "number",
+			"desc": "",
+			"sid": 763745052328583
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "bound",
+			"name": "ОбмежитиРівнем",
+			"sid": 968279016591498
+		},
+		{
+			"behaviorId": "EightDir",
+			"name": "8Direction",
+			"sid": 641661284086624
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4668285,
+						"collisionPoly": {
+							"points": [
+								0.2199999389648438,
+								0.2359999237060546,
+								0.5,
+								0.156,
+								0.7160000610351562,
+								0.15600000000000003,
+								0.7500000915527343,
+								0.45199993896484386,
+								0.9399998779296874,
+								0.43999999999999995,
+								0.9409998931884765,
+								0.5409999465942382,
+								0.7419999084472655,
+								0.5140000152587889,
+								0.7239999389648438,
+								0.8080000305175782,
+								0.5,
+								0.832,
+								0.224,
+								0.7560000915527344,
+								0.224,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Точка малюнку. 1",
+								"x": 0.992,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 813817886048309,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

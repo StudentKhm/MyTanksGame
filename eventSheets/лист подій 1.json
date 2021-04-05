@@ -1,0 +1,469 @@
+{
+	"name": "Лист подій 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Мишка",
+					"sid": 596500121442753,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 121545786328028,
+					"parameters": {
+						"object-to-create": "ПуляПерсонажа",
+						"layer": "0",
+						"x": "ТанкГравця.ImagePointX(1)",
+						"y": "ТанкГравця.ImagePointY(1)",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Аудіо",
+					"sid": 355643196879878,
+					"parameters": {
+						"audio-file": "Вистріл",
+						"loop": "not-looping",
+						"volume": "1000",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 374253959639415
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "ПуляПерсонажа",
+					"sid": 341207328839517
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle",
+					"objectClass": "ПуляПерсонажа",
+					"sid": 201603088228205,
+					"parameters": {
+						"angle": "ТанкГравця.Angle"
+					}
+				}
+			],
+			"sid": 357153626878280
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "ПуляПерсонажа",
+					"sid": 358581751619860,
+					"parameters": {
+						"object": "СТена"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "СТена",
+					"sid": 179179375633421
+				},
+				{
+					"id": "destroy",
+					"objectClass": "ПуляПерсонажа",
+					"sid": 774669364132421
+				}
+			],
+			"sid": 737734925471221
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 775914704451291,
+					"parameters": {
+						"interval-seconds": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Бот",
+					"sid": 230106776436182,
+					"parameters": {
+						"instance-variable": "Напрямок",
+						"value": "floor(random(0, 3) )"
+					}
+				}
+			],
+			"sid": 545683384243727
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Бот",
+					"sid": 928361103571908,
+					"parameters": {
+						"instance-variable": "Напрямок",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Бот",
+					"sid": 683245024904200,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "up"
+					}
+				}
+			],
+			"sid": 624332019883567
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Бот",
+					"sid": 212833225802201,
+					"parameters": {
+						"instance-variable": "Напрямок",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Бот",
+					"sid": 431827857455542,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "right"
+					}
+				}
+			],
+			"sid": 405798852227456
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Бот",
+					"sid": 581554780543485,
+					"parameters": {
+						"instance-variable": "Напрямок",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Бот",
+					"sid": 884170882953046,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "down"
+					}
+				}
+			],
+			"sid": 462509264807351
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Бот",
+					"sid": 419833669168801,
+					"parameters": {
+						"instance-variable": "Напрямок",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Бот",
+					"sid": 997423532749402,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "left"
+					}
+				}
+			],
+			"sid": 269471528186544
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 524162646131761,
+					"parameters": {
+						"interval-seconds": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Бот",
+					"sid": 824035298920584,
+					"parameters": {
+						"object": "ПуляБота",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Аудіо",
+					"sid": 226069017823744,
+					"parameters": {
+						"audio-file": "Вистріл",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 915026688414740
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Клавіатура",
+					"sid": 269557603656577,
+					"parameters": {
+						"key": 87
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "ТанкГравця",
+					"sid": 237547114262312,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "up"
+					}
+				}
+			],
+			"sid": 549746775116440
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Клавіатура",
+					"sid": 208284295888641,
+					"parameters": {
+						"key": 65
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "ТанкГравця",
+					"sid": 463701227821739,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "left"
+					}
+				}
+			],
+			"sid": 524500740499900
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Клавіатура",
+					"sid": 939337687410941,
+					"parameters": {
+						"key": 83
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "ТанкГравця",
+					"sid": 237265521368243,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "down"
+					}
+				}
+			],
+			"sid": 458414316518236
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Клавіатура",
+					"sid": 844200955638343,
+					"parameters": {
+						"key": 68
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "ТанкГравця",
+					"sid": 866166313540969,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "right"
+					}
+				}
+			],
+			"sid": 787166619465851
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "ПуляПерсонажа",
+					"sid": 551741563118418,
+					"parameters": {
+						"object": "Бот"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "ПуляПерсонажа",
+					"sid": 583011662518579
+				},
+				{
+					"id": "play",
+					"objectClass": "Аудіо",
+					"sid": 290486454198826,
+					"parameters": {
+						"audio-file": "ЗнищеняТанка",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Бот",
+					"sid": 131654245398165
+				}
+			],
+			"sid": 215433985998455
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "ПуляБота",
+					"sid": 181776766407159,
+					"parameters": {
+						"object": "ТанкГравця"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Аудіо",
+					"sid": 224351787561718,
+					"parameters": {
+						"audio-file": "ЗнищеняТанка",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "ТанкГравця",
+					"sid": 110224262029136
+				},
+				{
+					"id": "destroy",
+					"objectClass": "ПуляБота",
+					"sid": 981680958890843
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 885404741367426
+				}
+			],
+			"sid": 460990549436829
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "ПуляБота",
+					"sid": 751978848163862,
+					"parameters": {
+						"object": "СТена"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "ПуляБота",
+					"sid": 351479004481618
+				},
+				{
+					"id": "destroy",
+					"objectClass": "СТена",
+					"sid": 607925706210779
+				}
+			],
+			"sid": 749202076650358
+		}
+	],
+	"sid": 154092185857819
+}

@@ -1,0 +1,286 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 24100,
+	"name": "Тунки",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Спрайт",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Мишка",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Аудіо",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Клавіатура",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "[8 Direction]",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "bound",
+			"name": "Обмежити рівнем",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Проскролити До",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Тверде тіло",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Куля",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		}
+	],
+	"uniqueId": "9dsi34l875h",
+	"objectTypes": {
+		"items": [
+			"ТанкГравця",
+			"СТена",
+			"ПуляПерсонажа",
+			"Мишка",
+			"Бот",
+			"cooltext",
+			"cooltext2",
+			"Аудіо",
+			"Клавіатура",
+			"Спрайт",
+			"ПуляБота"
+		],
+		"subfolders": []
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"Рівень 1",
+			"MainMenu"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"Лист подій 1",
+			"MainMenuCode"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [
+				{
+					"name": "Вистріл.mp3",
+					"type": "audio/mpeg",
+					"sid": 339751250353000
+				},
+				{
+					"name": "ЗнищеняТанка.mp3",
+					"type": "audio/mpeg",
+					"sid": 376865096807007
+				},
+				{
+					"name": "Imagine Dragons Believer Piano.mp3",
+					"type": "audio/mpeg",
+					"sid": 330923849462524
+				},
+				{
+					"name": "00194.mp3",
+					"type": "audio/mpeg",
+					"sid": 906130454706961
+				}
+			],
+			"subfolders": []
+		},
+		"music": {
+			"items": [],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "[icon-16].png",
+					"type": "image/png",
+					"sid": 352365468294219,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "[icon-32].png",
+					"type": "image/png",
+					"sid": 371826340551372,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "[icon-64].png",
+					"type": "image/png",
+					"sid": 474431520065597,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "[icon-128].png",
+					"type": "image/png",
+					"sid": 446794451149610,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "[icon-256].png",
+					"type": "image/png",
+					"sid": 713789380887879,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "[icon-512].png",
+					"type": "image/png",
+					"sid": 852414954629973,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "[loading-logo].png",
+					"type": "image/png",
+					"sid": 874777230347986,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": false,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useHighDpi": true,
+		"orientations": "landscape",
+		"enableWebGL": true,
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"compositingMode": "standard",
+		"sampling": "trilinear",
+		"downscaling": "medium",
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"clearBackground": true,
+		"enhancedAccelerationPrecision": true,
+		"cordovaiOSScheme": "app"
+	},
+	"viewportWidth": 1280,
+	"viewportHeight": 720,
+	"firstLayout": null
+}

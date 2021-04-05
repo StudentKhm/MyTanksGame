@@ -1,0 +1,56 @@
+{
+	"name": "MainMenuCode",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Мишка",
+					"sid": 933115969164384,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "cooltext2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 664627702456119,
+					"parameters": {
+						"layout": "Рівень 1"
+					}
+				}
+			],
+			"sid": 393125570092539
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 727041974111223
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Аудіо",
+					"sid": 577207309635499,
+					"parameters": {
+						"audio-file": "Imagine Dragons Believer Piano",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 586725940274162
+		}
+	],
+	"sid": 194942295362782
+}
